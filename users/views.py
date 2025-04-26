@@ -135,3 +135,6 @@ def manage_bookings(request):
         return redirect('manage_bookings')
 
     return render(request, 'users/manage_bookings.html', {'bookings': bookings})
+
+def home(request):
+    return render(request, 'users/home.html')
